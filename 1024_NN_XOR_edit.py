@@ -32,9 +32,9 @@ class NeuralNetwork:
         
         #題目指定
         self.weights1= np.array([1.0, -1.0]) # w13m w23
-        self.thresholdVal = 0 
-        self.learningRate = 0.1 
-        self.delta = 0
+        self.thresholdVal  = 0    #θ
+        self.learningRate  = 0.1  #η
+        self.delta         = 0    #δ
         
     def feedforward(self):
         #hiden Layer
