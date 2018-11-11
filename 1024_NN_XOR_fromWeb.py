@@ -6,7 +6,8 @@ git: https://gist.github.com/jamesloyys/ff7a7bb1540384f709856f9cdcdee70d#file-ne
 
 # Imports
 import numpy as np 
-      
+import cv2
+cv2.data
 # Each row is a training example, each column is a feature  [X1, X2, X3]
 #X=np.array(([0,0,1],[0,1,1],[1,0,1],[1,1,1]), dtype=float)
 X=np.array(([0,0],[0,1],[1,0],[1,1]), dtype=float)
@@ -58,5 +59,5 @@ for i in range(1500): # trains the NN 1,000 times
         print ("Predicted Output: \n" + str(NN.feedforward()))
         print ("Loss: \n" + str(np.mean(np.square(y - NN.feedforward())))) # mean sum squared loss
         print ("\n")
-  
+    
     NN.train(X, y)
