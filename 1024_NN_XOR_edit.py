@@ -5,6 +5,7 @@ Created on Wed Oct 24 11:43:14 2018
 learning rate: η ita
 """
 import numpy as np
+
 #%% 輸入
 X = np.array([[ 1,  1],
                [ 1, -1],
